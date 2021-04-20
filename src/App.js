@@ -37,7 +37,7 @@ class App extends Component {
             <List> 
               {this.state.data.map(commentData => {
                 return (
-                  <Comment name={commentData.user.name} comment={commentData.comment} data={commentData}/>
+                  <Comment key={commentData.id} name={commentData.user.name} comment={commentData.comment} data={commentData}/>
                 );
               })}
             </List>

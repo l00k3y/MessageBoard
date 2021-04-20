@@ -51,7 +51,7 @@ export default function Comment(props){
                 <Divider />
                 {props.data.replies.map(commentData => {
                     return (
-                        <Comment name={commentData.user.name} comment={commentData.comment} data={commentData}/>
+                        <Comment key={commentData.id} name={commentData.user.name} comment={commentData.comment} data={commentData}/>
                     );
                 })}
             </ListItem>
