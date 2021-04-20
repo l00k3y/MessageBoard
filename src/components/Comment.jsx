@@ -2,7 +2,7 @@ import React from 'react';
 import { Divider, List, ListItem, ListItemText } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-import '../App.css';
+// import '../App.css';
 
 const useStyles = makeStyles((theme) => ({
     root: {

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { List, Typography } from '@material-ui/core';
+import { List } from '@material-ui/core';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Comment from './components/Comment';
+import Header from './components/Header';
 
 import './App.css';
 
@@ -31,7 +32,7 @@ class App extends Component {
     return (
       <div className="main-view">
         <CssBaseline />
-        <Typography variant="h3" style={{color: 'white', padding: '1%'}}>A Simple Message Board</Typography>
+        <Header />
         <div className="main-content-view">
           <div className="comment-list-view">
             <List> 
